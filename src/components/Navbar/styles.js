@@ -19,7 +19,7 @@ export const NavbarItems = styled.ul`
 
 export const NavbarLi = styled.a`
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.3em;
 
   background-color: #333159;
   color: white;
@@ -36,7 +36,7 @@ export const NavbarLi = styled.a`
 
 export const NavbarItem = styled.li`
   padding: 1.5em;
-  padding-right: 4em;
+  padding-right: 5em;
   background-color: #333159;
   color: white;
 
