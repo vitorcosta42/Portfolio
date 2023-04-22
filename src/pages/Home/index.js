@@ -1,14 +1,21 @@
 import React from "react";
 import * as S from "./styles";
-import GithubIcon from "../../components/GithubIcon";
-import LinkedinIcon from "../../components/LinkedinIcon";
+
 
 const Home = () => {
   return (
     <S.Container id="inicio">
       <S.MainContainer>
         <S.Span>Oi, eu sou </S.Span>
-        <S.Name>Vitor Costa</S.Name>
+         <S.Name>
+          <S.Typewriter
+            words={["Vitor Costa"]}
+            cursor
+            cursorStyle="|"
+            typeSpeed={120}
+            delaySpeed={1000}
+          />
+        </S.Name> 
         <S.Dev>Desenvolvedor Front-end</S.Dev>
         <S.ButtonsContainer>
           <S.Link
@@ -17,7 +24,7 @@ const Home = () => {
           >
             <S.Button>
               <S.LinkedinContainer>
-                <LinkedinIcon width="25" height="25" />
+                <S.LinkedinIcon width="25" height="25" />
               </S.LinkedinContainer>
               Linkedin
             </S.Button>
@@ -25,7 +32,7 @@ const Home = () => {
           <S.Link href="https://github.com/vitorcosta42" target="_blank">
             <S.Button>
               <S.GithubContainer>
-                <GithubIcon width="25" height="25" />
+                <S.GithubIcon width="25" height="25" />
               </S.GithubContainer>
               Github
             </S.Button>

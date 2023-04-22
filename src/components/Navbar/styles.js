@@ -20,7 +20,7 @@ export const NavbarItems = styled.ul`
 export const NavbarLi = styled.a`
   text-decoration: none;
   font-size: 1.3em;
-
+  transition-duration: 0.8s;
   background-color: #333159;
   color: white;
   &:hover {

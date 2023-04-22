@@ -1,5 +1,5 @@
 import React from "react";
-const GithubIcon = (props) => {
+export const GithubIcon = (props) => {
   const { width, height, fill } = props;
 
   return (
@@ -62,4 +62,3 @@ c-48 136 -85 185 -280 377 -100 98 -179 179 -177 182 3 2 66 19 140 36 374 90
     </svg>
   );
 };
-export default GithubIcon;
