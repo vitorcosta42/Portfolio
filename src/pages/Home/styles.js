@@ -1,14 +1,16 @@
 import styled from "styled-components";
 import { Typewriter as TypewriterStyled } from "react-simple-typewriter";
 import { GithubIcon as GithubIconStyled } from "../../components/GithubIcon";
-import {LinkedinIcon as LinkedinIconStyled}  from "../../components/LinkedinIcon/index";
+import {LinkedinIcon as LinkedinIconStyled}  from "../../components/LinkedinIcon";
 
 export const Container = styled.div`
-  height: 30em;
+  height: 35em;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color:#764d79;
+
 `;
 
 export const MainContainer = styled.div`

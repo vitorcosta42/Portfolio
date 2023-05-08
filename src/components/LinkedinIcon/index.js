@@ -31,15 +31,12 @@ export const LinkedinIcon = (props) => {
 3 1571 11 1605 13 61 43 108 88 138 l34 23 541 0 541 0 51 -24z"
         />
         <path
-          //  fill="white"
-
           stroke="white"
           strokeWidth="200"
           d="M283 3179 c16 -9 17 -89 17 -1454 l0 -1445 455 0 455 0 0 1449 c0
 1312 -1 1449 -16 1455 -29 11 -931 6 -911 -5z"
         />
         <path
-          //  fill="white"
           stroke="white"
           strokeWidth="200"
           d="M646 4845 c-229 -58 -396 -275 -396 -513 1 -230 161 -443 378 -503
@@ -47,7 +44,6 @@ export const LinkedinIcon = (props) => {
 61 -268 86 -383 57z"
         />
         <path
-          //  fill="white"
           stroke="white"
           strokeWidth="200"
           d="M1954 3174 c3 -9 6 -663 6 -1455 l0 -1439 335 0 335 0 0 808 c0 872

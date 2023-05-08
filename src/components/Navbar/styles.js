@@ -5,7 +5,6 @@ export const Navbar = styled.div`
   display: flex;
   justify-content: center;
   border-bottom: 3px solid #232146;
-  margin-bottom: 10px;
 `;
 
 export const NavbarItems = styled.ul`
