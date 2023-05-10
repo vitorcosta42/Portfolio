@@ -8,11 +8,8 @@ const About = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
 
-      // Defina a altura em que o conteúdo da página About deve ser exibido
-      // Neste exemplo, 50% da altura total da página é usado
       const triggerHeight = documentHeight * 0.1;
 
       if (scrollPosition > triggerHeight) {
@@ -30,7 +27,6 @@ const About = () => {
 
   return (
     <>
-    {/* {isVisible && */}
     <S.Container>
 
     <S.AboutContainer id="sobre-mim" visible={isVisible}>
@@ -76,9 +72,7 @@ const About = () => {
         </S.MainContainer>
     </S.AboutContainer>
     </S.Container>
-  {/* } */}
     </>
-
     );
 };
 

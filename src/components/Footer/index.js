@@ -1,14 +1,17 @@
-import React from 'react'
+import React from "react";
 import * as S from "./styles";
 
 const Footer = () => {
   return (
     <S.Footer>
-        <S.FooterLink>Gmail</S.FooterLink>
-        <S.FooterLink>Linkedin</S.FooterLink>
-        <S.FooterLink>GitHub</S.FooterLink>
+      <S.FooterSentence>
+        Desenvolvido por <S.FooterLink 
+       href="https://www.linkedin.com/in/vitorcosta-dev/"
+       target="_blank"
+        >Vitor Costa</S.FooterLink>
+      </S.FooterSentence>
     </S.Footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

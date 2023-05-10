@@ -5,7 +5,18 @@ export const Footer = styled.div`
   display: flex;
   justify-content: center;
   border-bottom: 3px solid #232146;
-  margin-bottom: 10px;
 `;
 
-export const FooterLink = styled.div``
+export const FooterSentence= styled.p``;
+
+export const FooterLink = styled.a`
+
+text-decoration: none;
+  transition-duration: 0.8s;
+  background-color: #333159;
+  color: #c897d8;
+  &:hover {
+    color: #b277b6;
+  }
+
+  `;
