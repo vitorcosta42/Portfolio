@@ -30,7 +30,6 @@ const About = () => {
     <S.Container>
 
     <S.AboutContainer id="sobre-mim" visible={isVisible}>
-
         <S.PhotoContainer>
           <S.VitorIcon src="vitor-about.jpg" width={300} height={320} />
         </S.PhotoContainer>
@@ -60,7 +59,7 @@ const About = () => {
             Currículo
           </S.Button>
         </S.Link>
-        <S.Link href="" target="_blank">
+        <S.Link href="mailto:vitorcostadev@gmail.com" target="_blank">
           <S.Button>
             <S.EmailContainer>
               <S.EmailIcon width="30" height="27" />

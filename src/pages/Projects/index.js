@@ -34,11 +34,11 @@ const Projects = () => {
           <Project
             title={"Titulo 1"}
             description={
-"Projeto desenvolvido a partir do curso de JavaScript ES6+ completo da Origamid, para por em prática meus estudos iniciais de JS."
-
-}
+              "Projeto desenvolvido a partir do curso de JavaScript ES6+ completo da Origamid, para por em prática meus estudos iniciais de JS."
+            }
             technologies={
-              "Tecnologias usadas no projeto: HTML, CSS, JavaScript Vanilla"}
+              "Tecnologias usadas no projeto: HTML, CSS, JavaScript Vanilla"
+            }
           />
           <Project
             title={"Titulo 1"}
@@ -58,7 +58,6 @@ const Projects = () => {
             technologies={"tecnologias"}
           />
         </S.Containers>
-     
       </S.ProjectsContainer>
     </S.Container>
   );

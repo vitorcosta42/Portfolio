@@ -1,25 +1,44 @@
 import styled from "styled-components";
 
 export const ProjectContainer = styled.div`
-width : 40%;
-background-color: gray;
+width : 30%;
+ background-color: gray;
 display: flex;
 flex-direction: column;
 align-items: center;
-margin: auto;
-margin-bottom: 2em;
+margin: 0 auto;
+margin-bottom: 5em;
 ,
 `;
 // margin: 1em 5em 1em 5em;
 
 export const ProjectImage = styled.img``;
 
-export const ProjectTitle = styled.h3``;
+export const ProjectTitle = styled.h2`
+text-align: left;
+
+font-size: 1.3em;
+`
+;
 
 export const ProjectDescription = styled.p`
+text-align: left;
+
 `;
 
-export const ProjectTechnologies = styled.p``;
+export const ProjectTechnologies = styled.span`
+font-size: 0.8em;
+color:lightgray;
+padding-bottom: 2em;
+text-align: left;
+
+`;
+
+export const ContainerButton = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+`;
 
 export const ViewButton = styled.button`
   padding: 15px;
@@ -30,8 +49,6 @@ export const ViewButton = styled.button`
   font-size: 1em;
   padding-bottom: 8px;
   padding-top: 8px;
-  justify-content: center;
-  display: flex;
   transition-duration: 0.8s;
 
   &:hover {

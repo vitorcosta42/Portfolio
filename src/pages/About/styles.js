@@ -1,17 +1,18 @@
 import styled from "styled-components";
-import { CurriculoIcon as CurriculoIconStyled } from "../../components/CurriculoIcon";
-import {EmailIcon as EmailIconStyled}  from "../../components/EmailIcon";
+import { CurriculoIcon as CurriculoIconStyled } from "../../components/icons";
+import {EmailIcon as EmailIconStyled}  from "../../components/icons";
 
 
 export const AboutContainer = styled.div`
-  height: 28em;
-  width: 100%;
+  padding-top: 3em;
+  padding-bottom: 3em;  
+width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #6a456d;
   opacity:0;
-  transition:opacity 2s ease-in-out;
+  transition:opacity 1s ease-in-out;
   ${(props) =>
     props.visible &&
     `

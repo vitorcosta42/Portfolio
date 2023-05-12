@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { Typewriter as TypewriterStyled } from "react-simple-typewriter";
-import { GithubIcon as GithubIconStyled } from "../../components/GithubIcon";
-import {LinkedinIcon as LinkedinIconStyled}  from "../../components/LinkedinIcon";
+import { GithubIcon as GithubIconStyled } from "../../components/icons";
+import {LinkedinIcon as LinkedinIconStyled}  from "../../components/icons";
 
 export const Container = styled.div`
-  height: 35em;
+  padding-top: 12em;
+  padding-bottom: 6em;
   width: 100%;
   display: flex;
   align-items: center;

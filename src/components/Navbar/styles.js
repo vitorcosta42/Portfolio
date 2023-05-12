@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
-export const Navbar = styled.div`
+export const Navbar = styled.nav`
   background-color: #333159;
   display: flex;
   justify-content: center;
   border-bottom: 3px solid #232146;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 `;
 
 export const NavbarItems = styled.ul`

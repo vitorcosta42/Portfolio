@@ -5,7 +5,7 @@ export const Container = styled.div`
 `;
 
 export const ProjectsContainer = styled.div`
-  height: 38em;
+  padding-top:2em;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -29,5 +29,5 @@ export const Title = styled.h1`
   font-size: 1.65em;
 `;
 export const TitleContainer = styled.div`
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 `;
