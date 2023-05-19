@@ -1,16 +1,22 @@
 import React from "react";
 import * as S from "./styles";
 
-const Project = ({ url, title, description, technologies, href }) => {
+const Project = ({ src, title, description, technologies, href }) => {
   return (
     <>
       <S.ProjectContainer>
-        <S.ProjectImage href={url} />
+        <S.ViewLink href={href} target="_blank">
+          <S.ProjectImage src={src} />
+        </S.ViewLink>
         <S.ProjectTitle>{title}</S.ProjectTitle>
         <S.ProjectDescription> {description}</S.ProjectDescription>
-        <S.ProjectTechnologies>{technologies}</S.ProjectTechnologies>
+        <S.ProjectTechnologies>
+          Tecnologias usadas no projeto: {technologies}
+        </S.ProjectTechnologies>
         <S.ContainerButton>
-          <S.ViewButton href={href}>Visualizar</S.ViewButton>
+          <S.ViewLink href={href} target="_blank">
+            <S.ViewButton>Visualizar</S.ViewButton>
+          </S.ViewLink>
         </S.ContainerButton>
       </S.ProjectContainer>
     </>

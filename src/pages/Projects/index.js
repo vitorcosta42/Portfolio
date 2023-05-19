@@ -32,31 +32,29 @@ const Projects = () => {
         </S.TitleContainer>
         <S.Containers>
           <Project
-            title={"Titulo 1"}
-            description={
-              "Projeto desenvolvido a partir do curso de JavaScript ES6+ completo da Origamid, para por em prática meus estudos iniciais de JS."
-            }
+          src="miniblog.png"
+            title={"Miniblog"}
+            description={"Desenvolvido a partir de um curso de React JS, o projeto utiliza o Firebase para o seu back-end e o React JS para o front-end. O usuário após se cadastrar poderá interagir com a publicação dos outros usuários e realizar suas próprias publicações."}
             technologies={
-              "Tecnologias usadas no projeto: HTML, CSS, JavaScript Vanilla"
+              "HTML, CSS, React JS, Firebase"
             }
+         href={"https://vitor-miniblog.vercel.app/"}
+         />
+
+          <Project
+          src="movieslib.png"
+            title={"MoviesLib"}
+            description={"Projeto realizado em React JS consumindo a API do TMDb (The Movie Database). Além de exibir os filmes mais bem avaliados e suas notas, também é possível pesquisar e ver os detalhes de qualquer filme presente no TMDb."}
+            technologies={"HTML, CSS, React JS, TMDb API"}
+            href={"https://vitor-movies-lib.vercel.app/"}
           />
           <Project
-            title={"Titulo 1"}
-            description={"descricao"}
-            technologies={"tecnologias"}
-          />
-        </S.Containers>
-        <S.Containers>
-          <Project
-            title={"Titulo 1"}
-            description={"descricao"}
-            technologies={"tecnologias"}
-          />
-          <Project
-            title={"Titulo 1"}
-            description={"descricao"}
-            technologies={"tecnologias"}
-          />
+          src="todo.png"
+            title={"To-Do List"}
+            description={"Projeto desenvolvido a partir do curso de TypeScript do professor Matheus Battisti, tendo como objetivo colocar em prática os conhecimentos obtidos. Uma simples lista de tarefas com listagem, criação, edição e exclusão. "}
+            technologies={"HTML, CSS, React JS + TypeScript"}
+            href={"https://vitor-todo-list.vercel.app/"}
+         />
         </S.Containers>
       </S.ProjectsContainer>
     </S.Container>

@@ -12,18 +12,20 @@ export const ProjectsContainer = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #764d79;
+  opacity:0;
+  transition:opacity 2s ease-in-out;
+  ${(props) =>
+    props.visible &&
+    `
+      opacity: 1;
+    `}
+
 `;
 export const Containers = styled.div`
   width: 100%;
   display: flex;
 `;
-//  opacity:0;
-//   transition:opacity 2s ease-in-out;
-//   ${(props) =>
-//     props.visible &&
-//     `
-//       opacity: 1;
-//     `}
+
 
 export const Title = styled.h1`
   font-size: 1.65em;
