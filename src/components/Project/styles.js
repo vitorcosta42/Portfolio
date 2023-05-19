@@ -57,6 +57,7 @@ font-size: 0.8em;
 color:lightgray;
 padding-bottom: 2em;
 text-align: left;
+text-indent: 1.5em;
 
 `;
 
