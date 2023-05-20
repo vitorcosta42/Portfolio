@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: #764d79;
+  width: 100%;
+
 `;
 
 export const ProjectsContainer = styled.div`
   padding-top:2em;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -5,8 +5,8 @@ export const Navbar = styled.nav`
   display: flex;
   justify-content: center;
   border-bottom: 3px solid #232146;
-  position: fixed;
   width: 100%;
+  position: fixed;
   z-index: 2;
 `;
 

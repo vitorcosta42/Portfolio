@@ -1,28 +1,27 @@
 import styled from "styled-components";
 import { CurriculoIcon as CurriculoIconStyled } from "../../components/icons";
-import {EmailIcon as EmailIconStyled}  from "../../components/icons";
+import { EmailIcon as EmailIconStyled } from "../../components/icons";
 
+export const Container = styled.div`
+  background-color: #764d79;
+  width: 100%;
+`;
 
 export const AboutContainer = styled.div`
   padding-top: 3em;
-  padding-bottom: 3em;  
-width: 100%;
+  padding-bottom: 3em;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #6a456d;
-  opacity:0;
-  transition:opacity 1s ease-in-out;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
   ${(props) =>
     props.visible &&
     `
       opacity: 1;
     `}
 `;
-export const Container = styled.div`
-  background-color: #764d79;
-`;
-
 
 export const VitorIcon = styled.img`
   border: 5px solid #333159;
@@ -45,26 +44,25 @@ export const VitorIcon = styled.img`
   }
 `;
 
-
 export const PhotoContainer = styled.div`
-width:33%;
-padding-left: 13em;
+  width: 30%;
 `;
 export const MainContainer = styled.div`
-width:66%;
-padding: 0em 11em 0em 8em;
+  width: 40%;
 `;
 
 export const Title = styled.h1`
-font-size: 1.65em;
+  font-size: 1.65em;
 `;
 
 export const Subtitle = styled.h2`
-font-size: 20px;`;
+  font-size: 20px;
+`;
 
 export const Description = styled.p`
-text-align:justify;
-text-indent: 2em;`;
+  text-align: justify;
+  text-indent: 2em;
+`;
 
 export const ButtonsContainer = styled.div`
   margin-top: 2em;
@@ -78,8 +76,8 @@ export const EmailContainer = styled.div`
   padding: 0;
   margin-bottom: 0;
   transition-duration: 0.8s;
-  background-color:  #333159;
-  fill:  #333159;
+  background-color: #333159;
+  fill: #333159;
   &:hover {
     fill: #333159;
   }
@@ -91,15 +89,14 @@ export const CurriculoContainer = styled.div`
   margin-bottom: 0;
   align-items: center;
   justify-content: center;
-  background-color:  #333159;
+  background-color: #333159;
   transition-duration: 0.8s;
-  fill:  #333159;
+  fill: #333159;
 `;
 export const Link = styled.a`
   text-decoration: none;
   padding: 5px;
 `;
-
 
 export const Button = styled.button`
   padding: 15px;
@@ -128,8 +125,6 @@ export const Button = styled.button`
   }
 `;
 
-
-export const CurriculoIcon = styled(CurriculoIconStyled)`
-`;
+export const CurriculoIcon = styled(CurriculoIconStyled)``;
 
 export const EmailIcon = styled(EmailIconStyled)``;

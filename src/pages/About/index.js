@@ -26,7 +26,6 @@ const About = () => {
   }, []);
 
   return (
-    <>
     <S.Container>
 
     <S.AboutContainer id="sobre-mim" visible={isVisible}>
@@ -71,7 +70,6 @@ const About = () => {
         </S.MainContainer>
     </S.AboutContainer>
     </S.Container>
-    </>
     );
 };
 

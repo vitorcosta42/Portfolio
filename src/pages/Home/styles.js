@@ -4,7 +4,7 @@ import { GithubIcon as GithubIconStyled } from "../../components/icons";
 import {LinkedinIcon as LinkedinIconStyled}  from "../../components/icons";
 
 export const Container = styled.div`
-  padding-top: 12em;
+  padding-top: 12.6em;
   padding-bottom: 6em;
   width: 100%;
   display: flex;

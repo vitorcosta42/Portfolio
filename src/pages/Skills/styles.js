@@ -11,10 +11,11 @@ const rotateAnimation = keyframes`
 
 export const Container = styled.div`
   background-color: #764d79;
+  width: 100%;
+
 `;
 
 export const SkillsContainer = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

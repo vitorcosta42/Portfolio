@@ -12,14 +12,14 @@ import React from "react";
 
 const Pages = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <Home />
       <About />
       <Projects />
       <Skills />
       <Footer />
-    </div>
+    </>
   );
 };
 
