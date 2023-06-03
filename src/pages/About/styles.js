@@ -21,6 +21,14 @@ export const AboutContainer = styled.div`
     `
       opacity: 1;
     `}
+
+
+  @media (max-width: 910px) {
+    background-color: gray;
+    font-size: 14px;
+  }
+
+
 `;
 
 export const VitorIcon = styled.img`
@@ -45,27 +53,16 @@ export const VitorIcon = styled.img`
 `;
 
 export const PhotoContainer = styled.div`
-  width: 30%;
+width: 40%;
 `;
 export const MainContainer = styled.div`
-  width: 40%;
+  width: 45%;
 `;
 
-export const Title = styled.h1`
-  font-size: 1.65em;
-`;
 
-export const Subtitle = styled.h2`
-  font-size: 20px;
-`;
-
-export const Description = styled.p`
-  text-align: justify;
-  text-indent: 2em;
-`;
 
 export const ButtonsContainer = styled.div`
-  margin-top: 2em;
+  margin-top: 2.5vw;
   display: flex;
   justify-content: center;
   padding: 0;
@@ -93,6 +90,22 @@ export const CurriculoContainer = styled.div`
   transition-duration: 0.8s;
   fill: #333159;
 `;
+
+export const Description = styled.p`
+  text-align: justify;
+  text-indent: 2em;
+  font-size: 1.2vw;
+`;
+
+export const Title = styled.h1`
+  font-size: 2vw;
+  margin-bottom: 1em;
+`;
+
+export const Subtitle = styled.h2`
+  font-size: 20px;
+`;
+
 export const Link = styled.a`
   text-decoration: none;
   padding: 5px;
@@ -104,7 +117,7 @@ export const Button = styled.button`
   margin-right: 1em;
   background-color: #333159;
   border: 3px solid #333159;
-  font-size: 1.4em;
+  font-size: 1.6vw;
   padding-bottom: 8px;
   padding-top: 8px;
   align-items: center;
