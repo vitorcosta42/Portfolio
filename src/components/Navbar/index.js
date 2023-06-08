@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import * as S from "./styles";
+import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
   const handleAnchorClick = (event) => {
     event.preventDefault();
     const targetId = event.target.getAttribute("href");
@@ -19,20 +24,29 @@ const Navbar = () => {
   };
   return (
     <S.Navbar>
-      <S.NavbarItems>
+      <S.NavbarItems className={isMenuOpen ? "open" : ""}>
         <S.NavbarItem>
-          <S.NavbarLi href="#inicio" >Início</S.NavbarLi>
+          <S.NavbarLi href="#inicio">Início</S.NavbarLi>
         </S.NavbarItem>
         <S.NavbarItem>
-          <S.NavbarLi href="#sobre-mim" onClick={handleAnchorClick}>Sobre</S.NavbarLi>
+          <S.NavbarLi href="#sobre-mim" onClick={handleAnchorClick}>
+            Sobre
+          </S.NavbarLi>
         </S.NavbarItem>
         <S.NavbarItem>
-          <S.NavbarLi href="#projetos" onClick={handleAnchorClick}>Projetos</S.NavbarLi>
+          <S.NavbarLi href="#projetos" onClick={handleAnchorClick}>
+            Projetos
+          </S.NavbarLi>
         </S.NavbarItem>
         <S.NavbarItem>
-          <S.NavbarLi href="#habilidades" onClick={handleAnchorClick}>Habilidades</S.NavbarLi>
+          <S.NavbarLi href="#habilidades" onClick={handleAnchorClick}>
+            Habilidades
+          </S.NavbarLi>
         </S.NavbarItem>
       </S.NavbarItems>
+      <div>
+        <FaBars className="hamburger" onClick={toggleMenu} />
+      </div>
     </S.Navbar>
   );
 };

@@ -26,7 +26,7 @@ const Projects = () => {
 
   return (
     <S.Container>
-      <S.ProjectsContainer id="projetos" visible={isVisible}>
+      {/* <S.ProjectsContainer id="projetos" visible={isVisible}>
         <S.TitleContainer>
           <S.Title>Projetos</S.Title>
         </S.TitleContainer>
@@ -56,7 +56,7 @@ const Projects = () => {
             href={"https://vitor-todo-list.vercel.app/"}
          />
         </S.Containers>
-      </S.ProjectsContainer>
+      </S.ProjectsContainer> */}
     </S.Container>
   );
 };

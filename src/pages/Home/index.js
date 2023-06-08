@@ -40,7 +40,7 @@ const Home = () => {
         </S.ButtonsContainer>
       </S.MainContainer>
       <S.VitorContainer>
-        <S.VitorIcon src="icon-vitor.jpeg" width={270} height={320} />
+        <S.VitorIcon src="icon-vitor.jpeg" width="300" height="350" />
       </S.VitorContainer>
     </S.Container>
   );

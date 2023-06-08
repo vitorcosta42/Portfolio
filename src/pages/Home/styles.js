@@ -4,29 +4,55 @@ import { GithubIcon as GithubIconStyled } from "../../components/icons";
 import {LinkedinIcon as LinkedinIconStyled}  from "../../components/icons";
 
 export const Container = styled.div`
-  padding-top: 12.6em;
+  padding-top: 11em;
   padding-bottom: 6em;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color:#764d79;
+  text-align: center;
+  @media (max-width:910px) { 
+    padding-bottom: 4em;
+  }
 
+`;
+export const VitorContainer = styled.div`
+width: 22%;
+
+@media (max-width:910px) { 
+  position: absolute;
+  top: 0;
+  margin-top: 4em;
+  width: 100%;
+}
 `;
 
 export const MainContainer = styled.div`
   padding-right: 4em;
   text-align: left;
+  width: 35%;
+  @media (max-width:910px) { 
+    margin: 0 auto;
+    margin-top: 15em ;
+    padding-right: 0;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
 `;
 
 export const ButtonsContainer = styled.div`
-  margin-top: 2em;
+  margin-top: 1em;
   display: flex;
-  justify-content: left;
-  padding: 0 1.4em;
+  @media (max-width:910px) { 
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+  }
 `;
 
-export const VitorContainer = styled.div``;
 
 export const LinkedinContainer = styled.div`
   margin-right: 0.5em;
@@ -59,7 +85,7 @@ export const Button = styled.button`
   margin-right: 1em;
   background-color: #5e3e61;
   border: 3px solid #333159;
-  font-size: 1.4em;
+  font-size: 1.6vw;
   padding-bottom: 8px;
   padding-top: 8px;
   align-items: center;
@@ -78,32 +104,55 @@ export const Button = styled.button`
       fill: #333159;
     }
   }
+
+  @media (max-width:910px) { 
+    font-size: 1em;
+  }
+
 `;
 
 export const Span = styled.span`
-  font-size: 2em;
+  font-size: 2vw;
   text-align: left;
+  
+  @media (max-width:910px) { 
+     font-size: 1.4em;
+  }
 `;
 
 export const Name = styled.div`
-  font-size: 4em;
+  font-size: 4vw;
   text-align: left;
   margin: 0;
+  margin-bottom: 7px;
   span {
-    font-size: 1em;
+    font-size: 4.5vw;
+  }
+
+  @media (max-width:910px) { 
+    text-align: center;
+    font-size: 2.5em;
+    span { 
+    font-size: 0.8em;
+
+    }
   }
 `;
 
 export const Typewriter = styled(TypewriterStyled)``;
 
 export const Dev = styled.span`
-  font-size: 1.8em;
+  font-size: 2vw;
   text-align: left;
+    @media (max-width:910px) { 
+    font-size: 1.1em;
+    }
 `;
 
 export const Link = styled.a`
   text-decoration: none;
   padding: 5px;
+
 `;
 
 export const VitorIcon = styled.img`

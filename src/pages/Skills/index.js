@@ -58,7 +58,7 @@ const Skills = () => {
           <S.Title>Habilidades</S.Title>
         </S.TitleContainer>
         <S.Containers>
-          <S.Skills>
+          {/* <S.Skills>
             <S.ContainerSkills>
               <S.Skill
                 onMouseEnter={() => {
@@ -307,7 +307,7 @@ const Skills = () => {
                 />
               </S.Skill>
             </S.ContainerSkills>
-          </S.Skills>
+          </S.Skills> */}
           <S.SkillDescription>
             <S.TitleDescription>{skillTitle}</S.TitleDescription>
             <S.Description>{skillDescription}</S.Description>

@@ -23,10 +23,9 @@ export const AboutContainer = styled.div`
     `}
 
 
-  @media (max-width: 910px) {
-    background-color: gray;
-    font-size: 14px;
-  }
+    @media (max-width:910px) { 
+      display: block;
+    }
 
 
 `;
@@ -54,12 +53,20 @@ export const VitorIcon = styled.img`
 
 export const PhotoContainer = styled.div`
 width: 40%;
+
+@media (max-width:910px) { 
+  width: 75%;
+  margin: 0 auto;
+}
 `;
 export const MainContainer = styled.div`
   width: 45%;
+
+  @media (max-width:910px) { 
+    width: 75%;
+    margin: 0 auto;
+  }
 `;
-
-
 
 export const ButtonsContainer = styled.div`
   margin-top: 2.5vw;
@@ -95,11 +102,19 @@ export const Description = styled.p`
   text-align: justify;
   text-indent: 2em;
   font-size: 1.2vw;
+  @media (max-width:910px) { 
+    font-size: 1em;
+  }
+
 `;
 
 export const Title = styled.h1`
   font-size: 2vw;
   margin-bottom: 1em;
+  @media (max-width:910px) { 
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
 `;
 
 export const Subtitle = styled.h2`
@@ -135,6 +150,9 @@ export const Button = styled.button`
       background-color: #5e3e61;
       fill: #5e3e61;
     }
+  }
+  @media (max-width:910px) { 
+    font-size: 1em;
   }
 `;
 
