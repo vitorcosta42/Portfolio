@@ -9,7 +9,7 @@ const Projects = () => {
       const scrollPosition = window.scrollY;
       const documentHeight = document.documentElement.scrollHeight;
 
-      const triggerHeight = documentHeight * 0.3;
+      const triggerHeight = documentHeight * 0.25;
 
       if (scrollPosition > triggerHeight) {
         setIsVisible(true);
