@@ -31,6 +31,11 @@ export const SkillsContainer = styled.div`
       opacity: 1;
     `}
 
+  @media (max-width:910px) { 
+    display: block;
+
+  }
+
 `;
  
 export const Containers = styled.div`
@@ -39,10 +44,17 @@ export const Containers = styled.div`
   margin: 0 auto;
   @media (max-width:910px) { 
     display: block;
-
+    width: 80%;
   }
 `;
 
+export const ResponsiveContainer = styled.div`
+  gap: 20px;
+  display: flex;
+  @media (max-width:500px) { 
+    display: block;
+  }
+`;
 
 export const Title = styled.h1`
   font-size: 1.65em;
@@ -58,7 +70,7 @@ export const ContainerSkills = styled.div`
   display: flex;
   gap: 20px;
   justify-content: center;
-  aign-items: center;
+  align-items: center;
 
 `;
 
@@ -81,7 +93,9 @@ export const Skills = styled.div`
   aign-items: center;
   flex-direction: column;
   padding: 0;
-  
+  @media (max-width:500px) { 
+    gap: 0px;
+  }
 `;
 
 export const Skill = styled.div`
@@ -96,6 +110,10 @@ export const Skill = styled.div`
   css`
     animation: ${rotateAnimation} 2s linear ;
   `}
+  @media (max-width:500px) { 
+    margin-bottom: 1em;
+  }
+
   `;
 
 export const TitleDescription = styled.h1`
