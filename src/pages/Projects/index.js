@@ -26,7 +26,7 @@ const Projects = () => {
 
   return (
     <S.Container>
-      {/* <S.ProjectsContainer id="projetos" visible={isVisible}>
+      <S.ProjectsContainer id="projetos" visible={isVisible}>
         <S.TitleContainer>
           <S.Title>Projetos</S.Title>
         </S.TitleContainer>
@@ -48,6 +48,8 @@ const Projects = () => {
             technologies={"HTML, CSS, React JS, TMDb API"}
             href={"https://vitor-movies-lib.vercel.app/"}
           />
+        </S.Containers>
+        <S.Containers>
           <Project
           src="todo.png"
             title={"To-Do List"}
@@ -55,8 +57,8 @@ const Projects = () => {
             technologies={"HTML, CSS, React JS + TypeScript"}
             href={"https://vitor-todo-list.vercel.app/"}
          />
-        </S.Containers>
-      </S.ProjectsContainer> */}
+                </S.Containers>
+      </S.ProjectsContainer>
     </S.Container>
   );
 };

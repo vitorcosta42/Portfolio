@@ -15,9 +15,14 @@ align-items: center;
 padding: 0.7em;
 margin: 0 auto;
 margin-bottom: 5em;
-width: 28%;
+width: 40%;
 border: 5px solid #232146;
 border-radius: 10px;
+
+@media (max-width:910px) { 
+  width: 80%;
+
+}
 
 `;
 

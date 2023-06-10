@@ -21,10 +21,17 @@ export const ProjectsContainer = styled.div`
       opacity: 1;
     `}
 
+
+
 `;
 export const Containers = styled.div`
   width: 100%;
   display: flex;
+
+  @media (max-width:910px) { 
+    display: block;
+
+  }
 `;
 
 

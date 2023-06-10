@@ -53,7 +53,7 @@ const About = () => {
         >
           <S.Button>
             <S.CurriculoContainer>
-              <S.CurriculoIcon width="28" height="28" />
+              <S.CurriculoIcon width="25" height="25" />
             </S.CurriculoContainer>
             Currículo
           </S.Button>
@@ -61,7 +61,7 @@ const About = () => {
         <S.Link href="mailto:vitorcostadev@gmail.com" target="_blank">
           <S.Button>
             <S.EmailContainer>
-              <S.EmailIcon width="28" height="28" />
+              <S.EmailIcon width="25" height="25" />
             </S.EmailContainer>
             E-mail
           </S.Button>

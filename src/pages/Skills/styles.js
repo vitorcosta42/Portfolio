@@ -37,15 +37,21 @@ export const Containers = styled.div`
   width: 60%;
   display: flex;
   margin: 0 auto;
+  @media (max-width:910px) { 
+    display: block;
+
+  }
 `;
 
 
 export const Title = styled.h1`
   font-size: 1.65em;
   margin-bottom: 2.5em;
+  @media (max-width:910px) { 
+    margin-bottom: 0.5em;
+      }
 `;
 export const TitleContainer = styled.div`
-  margin-bottom: 1em;
 `;
 
 export const ContainerSkills = styled.div`
@@ -53,12 +59,19 @@ export const ContainerSkills = styled.div`
   gap: 20px;
   justify-content: center;
   aign-items: center;
+
 `;
 
 export const SkillDescription = styled.div`
   margin-top: 2em;
-margin-left: 4em;
+  margin-right: 4em;
   font-size: 1.1em;
+  @media (max-width:910px) { 
+margin-right: 0;
+margin-top: 0;
+margin-bottom: 2em;
+  }
+
 `;
 
 export const Skills = styled.div`
@@ -68,6 +81,7 @@ export const Skills = styled.div`
   aign-items: center;
   flex-direction: column;
   padding: 0;
+  
 `;
 
 export const Skill = styled.div`

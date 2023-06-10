@@ -20,13 +20,13 @@ const Navbar = () => {
         behavior: "smooth",
       });
     }
-    // Resto do código do Navbar
+    setMenuOpen(!isMenuOpen);
   };
   return (
     <S.Navbar>
       <S.NavbarItems className={isMenuOpen ? "open" : ""}>
         <S.NavbarItem>
-          <S.NavbarLi href="#inicio">Início</S.NavbarLi>
+          <S.NavbarLi href="#inicio" onClick={handleAnchorClick}>Início</S.NavbarLi>
         </S.NavbarItem>
         <S.NavbarItem>
           <S.NavbarLi href="#sobre-mim" onClick={handleAnchorClick}>

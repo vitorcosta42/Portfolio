@@ -36,7 +36,7 @@ const Skills = () => {
       const scrollPosition = window.scrollY;
       const documentHeight = document.documentElement.scrollHeight;
 
-      const triggerHeight = documentHeight * 0.58;
+      const triggerHeight = documentHeight * 0.65;
 
       if (scrollPosition > triggerHeight) {
         setIsVisible(true);
@@ -58,7 +58,11 @@ const Skills = () => {
           <S.Title>Habilidades</S.Title>
         </S.TitleContainer>
         <S.Containers>
-          {/* <S.Skills>
+        <S.SkillDescription>
+            <S.TitleDescription>{skillTitle}</S.TitleDescription>
+            <S.Description>{skillDescription}</S.Description>
+          </S.SkillDescription>
+          <S.Skills>
             <S.ContainerSkills>
               <S.Skill
                 onMouseEnter={() => {
@@ -69,7 +73,6 @@ const Skills = () => {
                   );
                 }}
                 onMouseLeave={() => {
-                  handleSkillHover(defaultDesc);
                   setActiveIcon(null);
                 }}
                 isHovered={activeIcon === "html" ? isHovered : false}
@@ -90,7 +93,6 @@ const Skills = () => {
                 }}
                 isHovered={activeIcon === "css" ? isHovered : false}
                 onMouseLeave={() => {
-                  handleSkillHover(defaultDesc);
                   setActiveIcon(null);
                 }}
               >
@@ -110,7 +112,6 @@ const Skills = () => {
                 }}
                 isHovered={activeIcon === "javascript" ? isHovered : false}
                 onMouseLeave={() => {
-                  handleSkillHover(defaultDesc);
                   setActiveIcon(null);
                 }}
               >
@@ -130,7 +131,6 @@ const Skills = () => {
                 }}
                 isHovered={activeIcon === "typescript" ? isHovered : false}
                 onMouseLeave={() => {
-                  handleSkillHover(defaultDesc);
                   setActiveIcon(null);
                 }}
               >
@@ -153,7 +153,6 @@ const Skills = () => {
                 }}
                 isHovered={activeIcon === "react" ? isHovered : false}
                 onMouseLeave={() => {
-                  handleSkillHover(defaultDesc);
                   setActiveIcon(null);
                 }}
               >
@@ -173,7 +172,6 @@ const Skills = () => {
                 }}
                 isHovered={activeIcon === "bootstrap" ? isHovered : false}
                 onMouseLeave={() => {
-                  handleSkillHover(defaultDesc);
                   setActiveIcon(null);
                 }}
               >
@@ -193,7 +191,6 @@ const Skills = () => {
                 }}
                 isHovered={activeIcon === "sql" ? isHovered : false}
                 onMouseLeave={() => {
-                  handleSkillHover(defaultDesc);
                   setActiveIcon(null);
                 }}
               >
@@ -213,7 +210,6 @@ const Skills = () => {
                 }}
                 isHovered={activeIcon === "php" ? isHovered : false}
                 onMouseLeave={() => {
-                  handleSkillHover(defaultDesc);
                   setActiveIcon(null);
                 }}
               >
@@ -236,7 +232,6 @@ const Skills = () => {
                 }}
                 isHovered={activeIcon === "styled" ? isHovered : false}
                 onMouseLeave={() => {
-                  handleSkillHover(defaultDesc);
                   setActiveIcon(null);
                 }}
               >
@@ -256,7 +251,6 @@ const Skills = () => {
                 }}
                 isHovered={activeIcon === "git" ? isHovered : false}
                 onMouseLeave={() => {
-                  handleSkillHover(defaultDesc);
                   setActiveIcon(null);
                 }}
               >
@@ -276,7 +270,6 @@ const Skills = () => {
                 }}
                 isHovered={activeIcon === "github" ? isHovered : false}
                 onMouseLeave={() => {
-                  handleSkillHover(defaultDesc);
                   setActiveIcon(null);
                 }}
               >
@@ -296,7 +289,6 @@ const Skills = () => {
                 }}
                 isHovered={activeIcon === "node" ? isHovered : false}
                 onMouseLeave={() => {
-                  handleSkillHover(defaultDesc);
                   setActiveIcon(null);
                 }}
               >
@@ -307,11 +299,8 @@ const Skills = () => {
                 />
               </S.Skill>
             </S.ContainerSkills>
-          </S.Skills> */}
-          <S.SkillDescription>
-            <S.TitleDescription>{skillTitle}</S.TitleDescription>
-            <S.Description>{skillDescription}</S.Description>
-          </S.SkillDescription>
+          </S.Skills>
+        
         </S.Containers>
       </S.SkillsContainer>
     </S.Container>
