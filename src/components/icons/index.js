@@ -8,8 +8,7 @@ import { GitIcon } from "./GitIcon";
 import { HtmlIcon } from "./HtmlIcon";
 import {JavaScriptIcon} from './JavaScriptIcon'
 import { LinkedinIcon } from "./LinkedinIcon";
-import { MongoIcon } from "./MongoIcon";
-import { NodeIcon } from "./NodeIcon";
+import { LaravelIcon } from "./LaravelIcon";
 import { PhpIcon } from "./PhpIcon";
 import { ReactIcon } from "./ReactIcon";
 import { SkillsGithubIcon } from "./SkillsGithubIcon";
@@ -28,8 +27,7 @@ export {
     HtmlIcon,
     JavaScriptIcon,
     LinkedinIcon,
-    MongoIcon,
-    NodeIcon,
+    LaravelIcon,
     PhpIcon,
     ReactIcon,
     SkillsGithubIcon,

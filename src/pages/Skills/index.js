@@ -6,7 +6,7 @@ import {
   GitIcon,
   HtmlIcon,
   JavaScriptIcon,
-  NodeIcon,
+  LaravelIcon,
   PhpIcon,
   ReactIcon,
   SkillsGithubIcon,
@@ -293,20 +293,20 @@ const Skills = () => {
                 <S.Skill
                   onMouseEnter={() => {
                     handleSkillHover(
-                      "Node.js",
-                      "Node.js é um ambiente de execução JavaScript no lado do servidor, que permite construir aplicações web escaláveis e de alta performance.",
-                      "node"
+                      "Laravel",
+                      "Laravel é um ambiente de execução JavaScript no lado do servidor, que permite construir aplicações web escaláveis e de alta performance.",
+                      "laravel"
                     );
                   }}
-                  isHovered={activeIcon === "node" ? isHovered : false}
+                  isHovered={activeIcon === "laravel" ? isHovered : false}
                   onMouseLeave={() => {
                     setActiveIcon(null);
                   }}
                 >
-                  <NodeIcon
+                  <LaravelIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "node" ? "#68A063" : "#333159"}
+                    fill={activeIcon === "laravel" ? "#ff2d20" : "#333159"}
                   />
                 </S.Skill>
               </S.ResponsiveContainer>
