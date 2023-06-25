@@ -44,7 +44,7 @@
   <tr>
     <td align="center">
       <a href="https://github.com/vitorcosta42">
-        <img src="" width="100px;" alt="Foto de Vitor Costa"/><br>
+        <img style="border-radius:30px;" src="./public/icon-vitor.jpeg" width="100px;" alt="Foto de Vitor Costa"/><br>
         <sub>
           <b>Vitor Costa</b>
         </sub>
