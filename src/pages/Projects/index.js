@@ -40,7 +40,8 @@ const Projects = () => {
             }
          href={"https://vitor-miniblog.vercel.app/"}
          />
-
+        </S.Containers>
+        <S.Containers>
           <Project
           src="movieslib.png"
             title={"MoviesLib"}
@@ -48,7 +49,7 @@ const Projects = () => {
             technologies={"HTML, CSS, React JS, TMDb API"}
             href={"https://vitor-movies-lib.vercel.app/"}
           />
-        </S.Containers>
+            </S.Containers>
         <S.Containers>
           <Project
           src="todo.png"

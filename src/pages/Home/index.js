@@ -16,7 +16,7 @@ const Home = () => {
             delaySpeed={1000}
           />
         </S.Name> 
-        <S.Dev>Desenvolvedor Front-end</S.Dev>
+        <S.Dev>Full-Stack Developer</S.Dev>
         <S.ButtonsContainer>
           <S.Link
             href="https://www.linkedin.com/in/vitorcosta-dev/"

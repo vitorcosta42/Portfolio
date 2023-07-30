@@ -13,6 +13,10 @@ import {
   SqlIcon,
   StyledIcon,
   TypeScriptIcon,
+  VueIcon,
+  NextIcon,
+  TailwindIcon,
+  JestIcon
 } from "../../components/icons";
 
 const Skills = () => {
@@ -170,22 +174,23 @@ const Skills = () => {
                 <S.Skill
                   onMouseEnter={() => {
                     handleSkillHover(
-                      "Bootstrap",
-                      "Bootstrap é um framework de código aberto para desenvolvimento web que facilita a criação de interfaces responsivas e estilizadas.",
-                      "bootstrap"
+                      "Next.js",
+                      "O Next.js é um framework JavaScript de código aberto que permite criar aplicativos da Web e sites estáticos de alta performance. ",
+                      "next"
                     );
                   }}
-                  isHovered={activeIcon === "bootstrap" ? isHovered : false}
+                  isHovered={activeIcon === "next" ? isHovered : false}
                   onMouseLeave={() => {
                     setActiveIcon(null);
                   }}
                 >
-                  <BootstrapIcon
+                  <NextIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "bootstrap" ? "#563d7c" : "#333159"}
+                    fill={activeIcon === "next" ? "black" : "#333159"}
                   />
                 </S.Skill>
+               
               </S.ResponsiveContainer>
               <S.ResponsiveContainer>
                 <S.Skill
@@ -307,6 +312,74 @@ const Skills = () => {
                     width="75"
                     height="75"
                     fill={activeIcon === "laravel" ? "#ff2d20" : "#333159"}
+                  />
+                </S.Skill>
+              </S.ResponsiveContainer>
+            </S.ContainerSkills>
+            {/* container das novas skills */}
+            <S.ContainerSkills>
+              <S.ResponsiveContainer>
+                <S.Skill
+                  onMouseEnter={() => {
+                    handleSkillHover(
+                      "Vue.js",
+                   "Vue.js é um framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de usuário e aplicativos de página única."
+                      ,
+                      "vue"
+                    );
+                  }}
+                  isHovered={activeIcon === "vue" ? isHovered : false}
+                  onMouseLeave={() => {
+                    setActiveIcon(null);
+                  }}
+                >
+                  <VueIcon
+                    width="75"
+                    height="75"
+                    fill={activeIcon === "vue" ? "#41b883" : "#333159"}
+                    secondFill ={activeIcon === "vue" ? "#34495e" : "#333159"}
+                  />
+                </S.Skill>
+               
+              </S.ResponsiveContainer>
+              <S.ResponsiveContainer>
+                <S.Skill
+                  onMouseEnter={() => {
+                    handleSkillHover(
+                      "Tailwind CSS",
+                      "Assim como o Boostrap, Tailwind é um framework CSS que oferece a possibilidade de você criar layouts usando uma estrutura de CSS pronta.",
+                      "tailwind"
+                    );
+                  }}
+                  isHovered={activeIcon === "tailwind" ? isHovered : false}
+                  onMouseLeave={() => {
+                    setActiveIcon(null);
+                  }}
+                >
+                  <TailwindIcon
+                    width="75"
+                    height="75"
+                    fill={activeIcon === "tailwind" ? "#3490dc": "#333159"}
+                  />
+                </S.Skill>
+                
+                <S.Skill
+                  onMouseEnter={() => {
+                    handleSkillHover(
+                      "Bootstrap",
+                      "Bootstrap é um framework de código aberto para desenvolvimento web que facilita a criação de interfaces responsivas e estilizadas.",
+                      "bootstrap"
+                    );
+                  }}
+                  isHovered={activeIcon === "bootstrap" ? isHovered : false}
+                  onMouseLeave={() => {
+                    setActiveIcon(null);
+                  }}
+                >
+                  <BootstrapIcon
+                    width="75"
+                    height="75"
+                    fill={activeIcon === "bootstrap" ? "#563d7c" : "#333159"}
                   />
                 </S.Skill>
               </S.ResponsiveContainer>
