@@ -4,11 +4,9 @@ export const LinkedinIcon = (props) => {
 
   return (
     <svg
-      ver
       width={width}
       height={height}
       viewBox="0 0 512.000000 512.000000"
-      preserveAspectRatio="xMidYMid meet"
       fill={fill}
     >
       <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">

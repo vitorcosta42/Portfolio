@@ -16,7 +16,7 @@ import {
   VueIcon,
   NextIcon,
   TailwindIcon,
-  JestIcon
+  JestIcon,
 } from "../../components/icons";
 
 const Skills = () => {
@@ -190,52 +190,27 @@ const Skills = () => {
                     fill={activeIcon === "next" ? "black" : "#333159"}
                   />
                 </S.Skill>
-               
               </S.ResponsiveContainer>
               <S.ResponsiveContainer>
                 <S.Skill
                   onMouseEnter={() => {
                     handleSkillHover(
-                      "SQL",
-                      "SQL (Structured Query Language) é uma linguagem de consulta utilizada para interagir com bancos de dados relacionais, permitindo a manipulação e recuperação de dados.",
-                      "sql"
+                      "Jest",
+                      "Jest é um framework de teste em JavaScript criado pelo Facebook. Ele permite que você escreva testes com uma API fácil de usar e que funciona com vários projetos.",
+                      "jest"
                     );
                   }}
-                  isHovered={activeIcon === "sql" ? isHovered : false}
+                  isHovered={activeIcon === "jest" ? isHovered : false}
                   onMouseLeave={() => {
                     setActiveIcon(null);
                   }}
                 >
-                  <SqlIcon
+                  <JestIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "sql" ? "#00758F" : "#333159"}
+                    fill={activeIcon === "jest" ? "#C63D14" : "#333159"}
                   />
                 </S.Skill>
-                <S.Skill
-                  onMouseEnter={() => {
-                    handleSkillHover(
-                      "PHP",
-                      "PHP é uma linguagem de programação do lado do servidor amplamente utilizada, especialmente adequada para o desenvolvimento web, que permite a criação de páginas dinâmicas e interativas.",
-                      "php"
-                    );
-                  }}
-                  isHovered={activeIcon === "php" ? isHovered : false}
-                  onMouseLeave={() => {
-                    setActiveIcon(null);
-                  }}
-                >
-                  <PhpIcon
-                    width="75"
-                    height="75"
-                    fill={activeIcon === "php" ? "#787CB5" : "#333159"}
-                  />
-                </S.Skill>
-              </S.ResponsiveContainer>
-            </S.ContainerSkills>
-
-            <S.ContainerSkills>
-              <S.ResponsiveContainer>
                 <S.Skill
                   onMouseEnter={() => {
                     handleSkillHover(
@@ -255,44 +230,28 @@ const Skills = () => {
                     fill={activeIcon === "styled" ? "#FC8EAC" : "#333159"}
                   />
                 </S.Skill>
-                <S.Skill
-                  onMouseEnter={() => {
-                    handleSkillHover(
-                      "Git",
-                      "Git é um sistema de controle de versão amplamente utilizado que permite rastrear e gerenciar alterações em um projeto de desenvolvimento de software.",
-                      "git"
-                    );
-                  }}
-                  isHovered={activeIcon === "git" ? isHovered : false}
-                  onMouseLeave={() => {
-                    setActiveIcon(null);
-                  }}
-                >
-                  <GitIcon
-                    width="75"
-                    height="75"
-                    fill={activeIcon === "git" ? "#F1502F" : "#333159"}
-                  />
-                </S.Skill>
               </S.ResponsiveContainer>
+            </S.ContainerSkills>
+
+            <S.ContainerSkills>
               <S.ResponsiveContainer>
                 <S.Skill
                   onMouseEnter={() => {
                     handleSkillHover(
-                      "Github",
-                      "GitHub é uma plataforma de hospedagem de código-fonte baseada em Git, amplamente utilizada para colaboração e versionamento de projetos de software.",
-                      "github"
+                      "PHP",
+                      "PHP é uma linguagem de programação do lado do servidor amplamente utilizada, especialmente adequada para o desenvolvimento web, que permite a criação de páginas dinâmicas e interativas.",
+                      "php"
                     );
                   }}
-                  isHovered={activeIcon === "github" ? isHovered : false}
+                  isHovered={activeIcon === "php" ? isHovered : false}
                   onMouseLeave={() => {
                     setActiveIcon(null);
                   }}
                 >
-                  <SkillsGithubIcon
+                  <PhpIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "github" ? "black" : "#333159"}
+                    fill={activeIcon === "php" ? "#787CB5" : "#333159"}
                   />
                 </S.Skill>
                 <S.Skill
@@ -315,6 +274,46 @@ const Skills = () => {
                   />
                 </S.Skill>
               </S.ResponsiveContainer>
+              <S.ResponsiveContainer>
+                <S.Skill
+                  onMouseEnter={() => {
+                    handleSkillHover(
+                      "Git",
+                      "Git é um sistema de controle de versão amplamente utilizado que permite rastrear e gerenciar alterações em um projeto de desenvolvimento de software.",
+                      "git"
+                    );
+                  }}
+                  isHovered={activeIcon === "git" ? isHovered : false}
+                  onMouseLeave={() => {
+                    setActiveIcon(null);
+                  }}
+                >
+                  <GitIcon
+                    width="75"
+                    height="75"
+                    fill={activeIcon === "git" ? "#F1502F" : "#333159"}
+                  />
+                </S.Skill>
+                <S.Skill
+                  onMouseEnter={() => {
+                    handleSkillHover(
+                      "Github",
+                      "GitHub é uma plataforma de hospedagem de código-fonte baseada em Git, amplamente utilizada para colaboração e versionamento de projetos de software.",
+                      "github"
+                    );
+                  }}
+                  isHovered={activeIcon === "github" ? isHovered : false}
+                  onMouseLeave={() => {
+                    setActiveIcon(null);
+                  }}
+                >
+                  <SkillsGithubIcon
+                    width="75"
+                    height="75"
+                    fill={activeIcon === "github" ? "black" : "#333159"}
+                  />
+                </S.Skill>
+              </S.ResponsiveContainer>
             </S.ContainerSkills>
             {/* container das novas skills */}
             <S.ContainerSkills>
@@ -323,8 +322,7 @@ const Skills = () => {
                   onMouseEnter={() => {
                     handleSkillHover(
                       "Vue.js",
-                   "Vue.js é um framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de usuário e aplicativos de página única."
-                      ,
+                      "Vue.js é um framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de usuário e aplicativos de página única.",
                       "vue"
                     );
                   }}
@@ -337,10 +335,28 @@ const Skills = () => {
                     width="75"
                     height="75"
                     fill={activeIcon === "vue" ? "#41b883" : "#333159"}
-                    secondFill ={activeIcon === "vue" ? "#34495e" : "#333159"}
+                    secondFill={activeIcon === "vue" ? "#34495e" : "#333159"}
                   />
                 </S.Skill>
-               
+                <S.Skill
+                  onMouseEnter={() => {
+                    handleSkillHover(
+                      "Bootstrap",
+                      "Bootstrap é um framework de código aberto para desenvolvimento web que facilita a criação de interfaces responsivas e estilizadas.",
+                      "bootstrap"
+                    );
+                  }}
+                  isHovered={activeIcon === "bootstrap" ? isHovered : false}
+                  onMouseLeave={() => {
+                    setActiveIcon(null);
+                  }}
+                >
+                  <BootstrapIcon
+                    width="75"
+                    height="75"
+                    fill={activeIcon === "bootstrap" ? "#563d7c" : "#333159"}
+                  />
+                </S.Skill>
               </S.ResponsiveContainer>
               <S.ResponsiveContainer>
                 <S.Skill
@@ -359,27 +375,27 @@ const Skills = () => {
                   <TailwindIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "tailwind" ? "#3490dc": "#333159"}
+                    fill={activeIcon === "tailwind" ? "#3490dc" : "#333159"}
                   />
                 </S.Skill>
-                
+
                 <S.Skill
                   onMouseEnter={() => {
                     handleSkillHover(
-                      "Bootstrap",
-                      "Bootstrap é um framework de código aberto para desenvolvimento web que facilita a criação de interfaces responsivas e estilizadas.",
-                      "bootstrap"
+                      "SQL",
+                      "SQL (Structured Query Language) é uma linguagem de consulta utilizada para interagir com bancos de dados relacionais, permitindo a manipulação e recuperação de dados.",
+                      "sql"
                     );
                   }}
-                  isHovered={activeIcon === "bootstrap" ? isHovered : false}
+                  isHovered={activeIcon === "sql" ? isHovered : false}
                   onMouseLeave={() => {
                     setActiveIcon(null);
                   }}
                 >
-                  <BootstrapIcon
+                  <SqlIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "bootstrap" ? "#563d7c" : "#333159"}
+                    fill={activeIcon === "sql" ? "#00758F" : "#333159"}
                   />
                 </S.Skill>
               </S.ResponsiveContainer>
