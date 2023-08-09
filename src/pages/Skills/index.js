@@ -18,14 +18,16 @@ import {
   TailwindIcon,
   JestIcon,
 } from "../../components/icons";
-
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-  const defaultDesc =
+
+  const defaultDescMobile = "Toque em alguma habilidade para ler a descrição!";
+  const defaultDescDesktop =
     "Passe o mouse por cima de alguma habilidade para ler a descrição!";
+
   const [skillTitle, setSkillTitle] = useState("");
-  const [skillDescription, setSkillDescription] = useState(defaultDesc);
+  const [skillDescription, setSkillDescription] = useState(defaultDescDesktop);
   const [activeIcon, setActiveIcon] = useState(null);
 
   const handleSkillHover = (title, description, icon) => {
@@ -33,6 +35,16 @@ const Skills = () => {
     setSkillDescription(description);
     setActiveIcon(icon);
     setIsHovered(true);
+  };
+
+  const scrollToSkillsSection = () => {
+    const skillsSection = document.getElementById("habilidades");
+    if (skillsSection) {
+      window.scrollTo({
+        top: skillsSection.offsetTop,
+        behavior: "smooth",
+      });
+    }
   };
 
   useEffect(() => {
@@ -49,12 +61,24 @@ const Skills = () => {
       }
     };
 
+    const updateDescription = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 768) {
+        setSkillDescription(defaultDescMobile);
+      } else {
+        setSkillDescription(defaultDescDesktop);
+      }
+    };
+
+    updateDescription();
+    window.addEventListener("load", updateDescription);
     window.addEventListener("scroll", handleScroll);
+
     return () => {
+      window.removeEventListener("load", updateDescription);
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   return (
     <S.Container>
       <S.SkillsContainer id="habilidades" visible={isVisible}>
@@ -70,6 +94,9 @@ const Skills = () => {
             <S.ContainerSkills>
               <S.ResponsiveContainer>
                 <S.Skill
+                  onClick={() => {
+                    scrollToSkillsSection();
+                  }}
                   onMouseEnter={() => {
                     handleSkillHover(
                       "HTML",
@@ -89,6 +116,9 @@ const Skills = () => {
                   />
                 </S.Skill>
                 <S.Skill
+                  onClick={() => {
+                    scrollToSkillsSection();
+                  }}
                   onMouseEnter={() => {
                     handleSkillHover(
                       "CSS",
@@ -110,6 +140,9 @@ const Skills = () => {
               </S.ResponsiveContainer>
               <S.ResponsiveContainer>
                 <S.Skill
+                  onClick={() => {
+                    scrollToSkillsSection();
+                  }}
                   onMouseEnter={() => {
                     handleSkillHover(
                       "JavaScript",
@@ -129,6 +162,9 @@ const Skills = () => {
                   />
                 </S.Skill>
                 <S.Skill
+                  onClick={() => {
+                    scrollToSkillsSection();
+                  }}
                   onMouseEnter={() => {
                     handleSkillHover(
                       "TypeScript",
@@ -153,6 +189,9 @@ const Skills = () => {
             <S.ContainerSkills>
               <S.ResponsiveContainer>
                 <S.Skill
+                  onClick={() => {
+                    scrollToSkillsSection();
+                  }}
                   onMouseEnter={() => {
                     handleSkillHover(
                       "React",
@@ -172,6 +211,9 @@ const Skills = () => {
                   />
                 </S.Skill>
                 <S.Skill
+                  onClick={() => {
+                    scrollToSkillsSection();
+                  }}
                   onMouseEnter={() => {
                     handleSkillHover(
                       "Next.js",
@@ -193,6 +235,9 @@ const Skills = () => {
               </S.ResponsiveContainer>
               <S.ResponsiveContainer>
                 <S.Skill
+                  onClick={() => {
+                    scrollToSkillsSection();
+                  }}
                   onMouseEnter={() => {
                     handleSkillHover(
                       "Jest",
@@ -212,6 +257,9 @@ const Skills = () => {
                   />
                 </S.Skill>
                 <S.Skill
+                  onClick={() => {
+                    scrollToSkillsSection();
+                  }}
                   onMouseEnter={() => {
                     handleSkillHover(
                       "Styled Components",
@@ -236,6 +284,9 @@ const Skills = () => {
             <S.ContainerSkills>
               <S.ResponsiveContainer>
                 <S.Skill
+                  onClick={() => {
+                    scrollToSkillsSection();
+                  }}
                   onMouseEnter={() => {
                     handleSkillHover(
                       "PHP",
@@ -255,6 +306,9 @@ const Skills = () => {
                   />
                 </S.Skill>
                 <S.Skill
+                  onClick={() => {
+                    scrollToSkillsSection();
+                  }}
                   onMouseEnter={() => {
                     handleSkillHover(
                       "Laravel",
@@ -276,6 +330,9 @@ const Skills = () => {
               </S.ResponsiveContainer>
               <S.ResponsiveContainer>
                 <S.Skill
+                  onClick={() => {
+                    scrollToSkillsSection();
+                  }}
                   onMouseEnter={() => {
                     handleSkillHover(
                       "Git",
@@ -295,6 +352,9 @@ const Skills = () => {
                   />
                 </S.Skill>
                 <S.Skill
+                  onClick={() => {
+                    scrollToSkillsSection();
+                  }}
                   onMouseEnter={() => {
                     handleSkillHover(
                       "Github",
@@ -319,6 +379,9 @@ const Skills = () => {
             <S.ContainerSkills>
               <S.ResponsiveContainer>
                 <S.Skill
+                  onClick={() => {
+                    scrollToSkillsSection();
+                  }}
                   onMouseEnter={() => {
                     handleSkillHover(
                       "Vue.js",
@@ -339,6 +402,9 @@ const Skills = () => {
                   />
                 </S.Skill>
                 <S.Skill
+                  onClick={() => {
+                    scrollToSkillsSection();
+                  }}
                   onMouseEnter={() => {
                     handleSkillHover(
                       "Bootstrap",
@@ -360,6 +426,9 @@ const Skills = () => {
               </S.ResponsiveContainer>
               <S.ResponsiveContainer>
                 <S.Skill
+                  onClick={() => {
+                    scrollToSkillsSection();
+                  }}
                   onMouseEnter={() => {
                     handleSkillHover(
                       "Tailwind CSS",
@@ -380,6 +449,9 @@ const Skills = () => {
                 </S.Skill>
 
                 <S.Skill
+                  onClick={() => {
+                    scrollToSkillsSection();
+                  }}
                   onMouseEnter={() => {
                     handleSkillHover(
                       "SQL",
