@@ -1,0 +1,15 @@
+.swiper {
+    width: 50%;
+    height: 100%;
+    @media (max-width: 910px) {
+        width: 100%;
+      }
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

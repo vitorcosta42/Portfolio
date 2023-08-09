@@ -40,7 +40,7 @@ const Skills = () => {
       const scrollPosition = window.scrollY;
       const documentHeight = document.documentElement.scrollHeight;
 
-      const triggerHeight = documentHeight * 0.65;
+      const triggerHeight = documentHeight * 0.5;
 
       if (scrollPosition > triggerHeight) {
         setIsVisible(true);
