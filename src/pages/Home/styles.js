@@ -4,18 +4,19 @@ import { GithubIcon as GithubIconStyled } from "../../components/icons";
 import {LinkedinIcon as LinkedinIconStyled}  from "../../components/icons";
 
 export const Container = styled.div`
-  padding-top: 11em;
-  padding-bottom: 6em;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color:#764d79;
-  text-align: center;
+min-height: 50em; /* ou qualquer valor desejado para aumentar o tamanho */
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #764d79;
+text-align: center;
+}
   @media (max-width:910px) { 
     padding-bottom: 4em;
+    min-height: 36em;
+    align-items: end;
   }
-
 `;
 export const VitorContainer = styled.div`
 width: 22%;
@@ -157,6 +158,7 @@ export const Link = styled.a`
 
 export const VitorIcon = styled.img`
   border: 5px solid #333159;
+  margin-top: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
 

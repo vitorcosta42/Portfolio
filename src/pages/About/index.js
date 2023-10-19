@@ -28,9 +28,10 @@ const About = () => {
   return (
     <S.Container>
 
-    <S.AboutContainer id="sobre-mim" visible={isVisible}>
+    <S.AboutContainer   id="sobre-mim" visible={isVisible}
+    >
         <S.PhotoContainer>
-          <S.VitorIcon src="vitor-about.jpg" width="280" height="310" />
+          <S.VitorIcon src="vitor-about.jpg" width="280" height="320" />
         </S.PhotoContainer>
         <S.MainContainer>
           <S.Title>Sobre Mim</S.Title>
