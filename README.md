@@ -1,9 +1,9 @@
 <h1><a href="https://vitorcosta.vercel.app/" >Portfólio - Vitor Costa</a></h1>
 
 <div style="display: inline_block">
-  <img src="https://img.shields.io/badge/JavaScript-purple"/>
-  <img src="https://img.shields.io/badge/ReactJs-purple"/>
-  <img src="https://img.shields.io/badge/Styled Components-purple"/>
+  <img src="https://img.shields.io/badge/JavaScript-5F744B"/>
+  <img src="https://img.shields.io/badge/ReactJs-5F744B"/>
+  <img src="https://img.shields.io/badge/Styled Components-5F744B"/>
 </div>
 <img src= "./public/home.png" />
 
