@@ -1,7 +1,7 @@
 import { BootstrapIcon } from "./BootstrapIcon";
 import { CssIcon } from "./CssIcon";
 import { CurriculoIcon } from "./CurriculoIcon";
-import { EmailIcon } from "./EmailIcon";
+import { InstagramIcon } from "./InstagramIcon";
 import { FirebaseIcon } from "./FirebaseIcon";
 import { GithubIcon } from "./GithubIcon";
 import { GitIcon } from "./GitIcon";
@@ -23,7 +23,7 @@ export {
   BootstrapIcon,
   CssIcon,
   CurriculoIcon,
-  EmailIcon,
+  InstagramIcon,
   FirebaseIcon,
   GithubIcon,
   GitIcon,

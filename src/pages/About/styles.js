@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { CurriculoIcon as CurriculoIconStyled } from "../../components/icons";
-import { EmailIcon as EmailIconStyled } from "../../components/icons";
+import { InstagramIcon as InstagramIconStyled } from "../../components/icons";
 
 export const Container = styled.div`
-  background-color: #764d79;
+  background-color: #8fa178;
   width: 100%;
 `;
 
@@ -13,7 +13,7 @@ export const AboutContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #6a456d;
+  background-color: #5f744b;
   opacity: 0;
   transition: opacity 1s ease-in-out;
   ${(props) =>
@@ -22,16 +22,13 @@ export const AboutContainer = styled.div`
       opacity: 1;
     `}
 
-
-    @media (max-width:910px) { 
-      display: block;
-    }
-
-
+  @media (max-width:910px) {
+    display: block;
+  }
 `;
 
 export const VitorIcon = styled.img`
-  border: 5px solid #333159;
+  border: 5px solid #f3edde;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
 
@@ -52,17 +49,17 @@ export const VitorIcon = styled.img`
 `;
 
 export const PhotoContainer = styled.div`
-width: 40%;
+  width: 40%;
 
-@media (max-width:910px) { 
-  width: 75%;
-  margin: 0 auto;
-}
+  @media (max-width: 910px) {
+    width: 75%;
+    margin: 0 auto;
+  }
 `;
 export const MainContainer = styled.div`
   width: 45%;
 
-  @media (max-width:910px) { 
+  @media (max-width: 910px) {
     width: 75%;
     margin: 0 auto;
   }
@@ -75,15 +72,15 @@ export const ButtonsContainer = styled.div`
   padding: 0;
 `;
 
-export const EmailContainer = styled.div`
+export const InstagramContainer = styled.div`
   margin-right: 0.5em;
   padding: 0;
   margin-bottom: 0;
   transition-duration: 0.8s;
-  background-color: #333159;
-  fill: #333159;
+  background-color: #495839ff;
+  fill: #495839ff;
   &:hover {
-    fill: #333159;
+    fill: #495839ff;
   }
 `;
 
@@ -93,25 +90,24 @@ export const CurriculoContainer = styled.div`
   margin-bottom: 0;
   align-items: center;
   justify-content: center;
-  background-color: #333159;
+  background-color: #495839ff;
   transition-duration: 0.8s;
-  fill: #333159;
+  fill: #495839ff;
 `;
 
 export const Description = styled.p`
   text-align: justify;
   text-indent: 2em;
   font-size: 1.2vw;
-  @media (max-width:910px) { 
+  @media (max-width: 910px) {
     font-size: 1em;
   }
-
 `;
 
 export const Title = styled.h1`
   font-size: 2vw;
   margin-bottom: 1em;
-  @media (max-width:910px) { 
+  @media (max-width: 910px) {
     font-size: 1.5em;
     margin-top: 1em;
   }
@@ -130,8 +126,8 @@ export const Button = styled.button`
   padding: 15px;
   border-radius: 0.5em;
   margin-right: 1em;
-  background-color: #333159;
-  border: 3px solid #333159;
+  background-color: #495839ff;
+  border: 3px solid #495839ff;
   font-size: 1.6vw;
   padding-bottom: 8px;
   padding-top: 8px;
@@ -139,27 +135,28 @@ export const Button = styled.button`
   display: flex;
   transition-duration: 0.8s;
   &:hover {
-    background-color: #5e3e61;
+    background-color: #8fa178;
     color: #fff;
     cursor: pointer;
-    ${EmailContainer} {
-      background-color: #5e3e61;
-      fill: #5e3e61;
+    border: 3px solid #495839ff;
+    ${InstagramContainer} {
+      background-color: #8fa178;
+      fill: #8fa178;
     }
     ${CurriculoContainer} {
-      background-color: #5e3e61;
-      fill: #5e3e61;
+      background-color: #8fa178;
+      fill: #8fa178;
     }
   }
-  @media (max-width:910px) { 
+  @media (max-width: 910px) {
     font-size: 1em;
   }
 
-  @media (max-width:500px) { 
+  @media (max-width: 500px) {
     font-size: 0.8em;
   }
 `;
 
 export const CurriculoIcon = styled(CurriculoIconStyled)``;
 
-export const EmailIcon = styled(EmailIconStyled)``;
+export const InstagramIcon = styled(InstagramIconStyled)``;

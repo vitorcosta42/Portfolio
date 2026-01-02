@@ -3,10 +3,10 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 // pages
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Skills from "../pages/Skills";
-import Projects from "../pages/Projects";
+import Home from "./Home";
+import About from "./About";
+import Skills from "./Skills";
+import Projects from "./Projects";
 
 import React from "react";
 

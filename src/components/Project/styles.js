@@ -6,7 +6,7 @@ const getRandomBorderStyle = () => {
 };
 
 export const ProjectContainer = styled.div`
-  background-color: #333159;
+  background-color: #5f744b;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,7 @@ export const ProjectContainer = styled.div`
   margin: 0 auto;
   margin-bottom: 2em;
   width: 70%;
-  border: 5px solid #232146;
+  border: 5px solid #495839ff;
   border-radius: 10px;
 
   @media (max-width: 910px) {
@@ -24,7 +24,7 @@ export const ProjectContainer = styled.div`
 
 export const ProjectImage = styled.img`
   width: 70%;
-  border: 5px solid #232146;
+  border: 5px solid #495839ff;
   border-radius: 10px;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -33,8 +33,8 @@ export const ProjectImage = styled.img`
     transform: translateY(-5px);
     width: 75%;
     cursor: pointer;
-    border: 5px outset #232146;
-    border: 5px ${getRandomBorderStyle()} #232146;
+    border: 5px outset #495839ff;
+    border: 5px ${getRandomBorderStyle()} #495839ff;
   }
 `;
 
@@ -69,7 +69,7 @@ export const ViewButton = styled.button`
   padding: 15px;
   border-radius: 0.5em;
   margin-bottom: 1em;
-  background-color: #232146;
+  background-color: #495839ff;
   border: 2px solid white;
   font-size: 1em;
   padding-bottom: 8px;
@@ -79,9 +79,9 @@ export const ViewButton = styled.button`
 
   &:hover {
     background-color: white;
-    color: #232146;
+    color: #495839ff;
     cursor: pointer;
-    border: 2px solid #232146;
+    border: 2px solid #495839ff;
   }
 `;
 

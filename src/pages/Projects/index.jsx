@@ -50,12 +50,27 @@ const Projects = () => {
           <SwiperSlide>
             <S.Containers>
               <Project
+                src="velasparacarlo.png"
+                title={"Velas para Carlo"}
+                description={
+                  "Esse projeto full-stack consiste em uma plataforma web para acendimento de velas virtuais, desenvolvida com Vue.js no front-end e Firebase no back-end, utilizando banco de dados e endpoints para criação e exibição das intenções de oração."
+                }
+                technologies={"Vue.js + TypeScript e Firebase"}
+                href={"https://velasparacarlo.com.br"}
+              />
+            </S.Containers>
+          </SwiperSlide>
+          <SwiperSlide>
+            <S.Containers>
+              <Project
                 src="buscacep.png"
                 title={"Consulta de CEP"}
                 description={
                   "Esse projeto full-stack conta com um CRUD completo para endereços, ele utiliza Vue.js e Bootstrap no front-end, PHP e Laravel no back-end e MySQL para o banco de dados. Também utiliza Docker para a containerização e a API do ViaCEP para adquirir os dados dos CEP's com mais facilidade."
                 }
-                technologies={"Vue.js, Bootstrap, PHP, Laravel, MySQL, Docker, ViaCEP API"}
+                technologies={
+                  "Vue.js, Bootstrap, PHP, Laravel, MySQL, Docker, ViaCEP API"
+                }
                 href={"https://github.com/vitorcosta42/buscar-cep"}
               />
             </S.Containers>

@@ -2,18 +2,17 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  background-color:  #6a456d;
-
+  background-color: #5f744b;
 `;
 export const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #764d79;
+  background-color: #8fa178;
   padding-bottom: 1em;
-  opacity:0;
-  transition:opacity 1s ease-in-out;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
   ${(props) =>
     props.visible &&
     `
@@ -24,9 +23,8 @@ export const Containers = styled.div`
   width: 100%;
   display: flex;
 
-  @media (max-width:910px) { 
+  @media (max-width: 910px) {
     display: block;
-
   }
 `;
 
@@ -37,5 +35,4 @@ export const Title = styled.h1`
 `;
 export const TitleContainer = styled.div`
   margin-bottom: 1.5em;
-
 `;

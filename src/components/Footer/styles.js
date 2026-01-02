@@ -1,22 +1,19 @@
 import styled from "styled-components";
 
 export const Footer = styled.div`
-  background-color: #333159;
+  background-color: #495839ff;
   display: flex;
   justify-content: center;
   border-bottom: 3px solid #232146;
 `;
 
-export const FooterSentence= styled.p``;
+export const FooterSentence = styled.p``;
 
 export const FooterLink = styled.a`
-
-text-decoration: none;
+  text-decoration: none;
   transition-duration: 0.8s;
-  background-color: #333159;
-  color: #c897d8;
+  color: #bad19cff;
   &:hover {
-    color: #b277b6;
+    color: #8fa178;
   }
-
-  `;
+`;

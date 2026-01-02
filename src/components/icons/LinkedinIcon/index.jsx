@@ -1,6 +1,6 @@
 import React from "react";
 export const LinkedinIcon = (props) => {
-   const { width, height, fill } = props;
+  const { width, height, fill } = props;
 
   return (
     <svg

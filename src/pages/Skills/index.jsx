@@ -112,7 +112,7 @@ const Skills = () => {
                   <HtmlIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "html" ? "#f46336	" : "#333159"}
+                    fill={activeIcon === "html" ? "#f46336	" : "#5F744B"}
                   />
                 </S.Skill>
                 <S.Skill
@@ -134,7 +134,7 @@ const Skills = () => {
                   <CssIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "css" ? "#3047ca" : "#333159"}
+                    fill={activeIcon === "css" ? "#3047ca" : "#5F744B"}
                   />
                 </S.Skill>
               </S.ResponsiveContainer>
@@ -158,7 +158,7 @@ const Skills = () => {
                   <JavaScriptIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "javascript" ? "#F0DB4F" : "#333159"}
+                    fill={activeIcon === "javascript" ? "#F0DB4F" : "#5F744B"}
                   />
                 </S.Skill>
                 <S.Skill
@@ -180,7 +180,7 @@ const Skills = () => {
                   <TypeScriptIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "typescript" ? "#007acc" : "#333159"}
+                    fill={activeIcon === "typescript" ? "#007acc" : "#5F744B"}
                   />
                 </S.Skill>
               </S.ResponsiveContainer>
@@ -207,7 +207,7 @@ const Skills = () => {
                   <ReactIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "react" ? "#64DBFB" : "#333159"}
+                    fill={activeIcon === "react" ? "#64DBFB" : "#5F744B"}
                   />
                 </S.Skill>
                 <S.Skill
@@ -229,7 +229,7 @@ const Skills = () => {
                   <NextIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "next" ? "black" : "#333159"}
+                    fill={activeIcon === "next" ? "black" : "#5F744B"}
                   />
                 </S.Skill>
               </S.ResponsiveContainer>
@@ -253,7 +253,7 @@ const Skills = () => {
                   <JestIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "jest" ? "#C63D14" : "#333159"}
+                    fill={activeIcon === "jest" ? "#C63D14" : "#5F744B"}
                   />
                 </S.Skill>
                 <S.Skill
@@ -275,7 +275,7 @@ const Skills = () => {
                   <StyledIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "styled" ? "#FC8EAC" : "#333159"}
+                    fill={activeIcon === "styled" ? "#FC8EAC" : "#5F744B"}
                   />
                 </S.Skill>
               </S.ResponsiveContainer>
@@ -302,7 +302,7 @@ const Skills = () => {
                   <PhpIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "php" ? "#787CB5" : "#333159"}
+                    fill={activeIcon === "php" ? "#787CB5" : "#5F744B"}
                   />
                 </S.Skill>
                 <S.Skill
@@ -324,7 +324,7 @@ const Skills = () => {
                   <LaravelIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "laravel" ? "#ff2d20" : "#333159"}
+                    fill={activeIcon === "laravel" ? "#ff2d20" : "#5F744B"}
                   />
                 </S.Skill>
               </S.ResponsiveContainer>
@@ -348,7 +348,7 @@ const Skills = () => {
                   <GitIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "git" ? "#F1502F" : "#333159"}
+                    fill={activeIcon === "git" ? "#F1502F" : "#5F744B"}
                   />
                 </S.Skill>
                 <S.Skill
@@ -370,7 +370,7 @@ const Skills = () => {
                   <SkillsGithubIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "github" ? "black" : "#333159"}
+                    fill={activeIcon === "github" ? "black" : "#5F744B"}
                   />
                 </S.Skill>
               </S.ResponsiveContainer>
@@ -397,8 +397,8 @@ const Skills = () => {
                   <VueIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "vue" ? "#41b883" : "#333159"}
-                    secondFill={activeIcon === "vue" ? "#34495e" : "#333159"}
+                    fill={activeIcon === "vue" ? "#41b883" : "#5F744B"}
+                    secondFill={activeIcon === "vue" ? "#34495e" : "#5F744B"}
                   />
                 </S.Skill>
                 <S.Skill
@@ -420,7 +420,7 @@ const Skills = () => {
                   <BootstrapIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "bootstrap" ? "#563d7c" : "#333159"}
+                    fill={activeIcon === "bootstrap" ? "#563d7c" : "#5F744B"}
                   />
                 </S.Skill>
               </S.ResponsiveContainer>
@@ -444,7 +444,7 @@ const Skills = () => {
                   <TailwindIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "tailwind" ? "#3490dc" : "#333159"}
+                    fill={activeIcon === "tailwind" ? "#3490dc" : "#5F744B"}
                   />
                 </S.Skill>
 
@@ -467,7 +467,7 @@ const Skills = () => {
                   <SqlIcon
                     width="75"
                     height="75"
-                    fill={activeIcon === "sql" ? "#00758F" : "#333159"}
+                    fill={activeIcon === "sql" ? "#00758F" : "#5F744B"}
                   />
                 </S.Skill>
               </S.ResponsiveContainer>

@@ -1,13 +1,12 @@
 import React from "react";
 import * as S from "./styles";
 
-
 const Home = () => {
   return (
     <S.Container id="inicio">
       <S.MainContainer>
         <S.Span>Oi, eu sou </S.Span>
-         <S.Name>
+        <S.Name>
           <S.Typewriter
             words={["Vitor Costa"]}
             cursor
@@ -15,7 +14,7 @@ const Home = () => {
             typeSpeed={120}
             delaySpeed={1000}
           />
-        </S.Name> 
+        </S.Name>
         <S.Dev>Full-Stack Developer</S.Dev>
         <S.ButtonsContainer>
           <S.Link
@@ -40,7 +39,7 @@ const Home = () => {
         </S.ButtonsContainer>
       </S.MainContainer>
       <S.VitorContainer>
-        <S.VitorIcon src="icon-vitor.jpeg" width="300" height="350" />
+        <S.VitorIcon src="icon-vitor.png" width="340" height="350" />
       </S.VitorContainer>
     </S.Container>
   );

@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import { Typewriter as TypewriterStyled } from "react-simple-typewriter";
 import { GithubIcon as GithubIconStyled } from "../../components/icons";
-import {LinkedinIcon as LinkedinIconStyled}  from "../../components/icons";
+import { LinkedinIcon as LinkedinIconStyled } from "../../components/icons";
 
 export const Container = styled.div`
-min-height: 50em; /* ou qualquer valor desejado para aumentar o tamanho */
+min-height: calc(100vh + 85px);
 width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
-background-color: #764d79;
+background-color: #8FA178;
 text-align: center;
 }
   @media (max-width:910px) { 
@@ -19,23 +19,23 @@ text-align: center;
   }
 `;
 export const VitorContainer = styled.div`
-width: 22%;
+  width: 22%;
 
-@media (max-width:910px) { 
-  position: absolute;
-  top: 0;
-  margin-top: 4em;
-  width: 100%;
-}
+  @media (max-width: 910px) {
+    position: absolute;
+    top: 0;
+    margin-top: 4em;
+    width: 100%;
+  }
 `;
 
 export const MainContainer = styled.div`
   padding-right: 4em;
   text-align: left;
   width: 35%;
-  @media (max-width:910px) { 
+  @media (max-width: 910px) {
     margin: 0 auto;
-    margin-top: 15em ;
+    margin-top: 15em;
     padding-right: 0;
     justify-content: center;
     text-align: center;
@@ -46,7 +46,7 @@ export const MainContainer = styled.div`
 export const ButtonsContainer = styled.div`
   margin-top: 1em;
   display: flex;
-  @media (max-width:910px) { 
+  @media (max-width: 910px) {
     margin: 0 auto;
     margin-top: 10px;
     width: 100%;
@@ -54,14 +54,13 @@ export const ButtonsContainer = styled.div`
   }
 `;
 
-
 export const LinkedinContainer = styled.div`
   margin-right: 0.5em;
   padding: 0;
   margin-bottom: 0;
   transition-duration: 0.8s;
-  background-color: #5e3e61;
-  fill: #5e3e61;
+  background-color: #5f744b;
+  fill: #5f744b;
   &:hover {
     fill: #333159;
   }
@@ -71,9 +70,9 @@ export const GithubContainer = styled.div`
   margin-right: 0.5em;
   padding: 0;
   margin-bottom: 0;
-  background-color: #5e3e61;
+  background-color: #5f744b;
   transition-duration: 0.8s;
-  fill: #5e3e61;
+  fill: #5f744b;
 `;
 
 export const GithubIcon = styled(GithubIconStyled)``;
@@ -84,8 +83,8 @@ export const Button = styled.button`
   padding: 15px;
   border-radius: 0.5em;
   margin-right: 1em;
-  background-color: #5e3e61;
-  border: 3px solid #333159;
+  background-color: #5f744b;
+  border: 3px solid #495839ff;
   font-size: 1.6vw;
   padding-bottom: 8px;
   padding-top: 8px;
@@ -93,31 +92,30 @@ export const Button = styled.button`
   display: flex;
   transition-duration: 0.8s;
   &:hover {
-    background-color: #333159;
+    background-color: #495839ff;
     color: #fff;
     cursor: pointer;
     ${LinkedinContainer} {
-      background-color: #333159;
-      fill: #333159;
+      background-color: #495839ff;
+      fill: #495839ff;
     }
     ${GithubContainer} {
-      background-color: #333159;
-      fill: #333159;
+      background-color: #495839ff;
+      fill: #495839ff;
     }
   }
 
-  @media (max-width:910px) { 
+  @media (max-width: 910px) {
     font-size: 1em;
   }
-
 `;
 
 export const Span = styled.span`
   font-size: 2vw;
   text-align: left;
-  
-  @media (max-width:910px) { 
-     font-size: 1.4em;
+
+  @media (max-width: 910px) {
+    font-size: 1.4em;
   }
 `;
 
@@ -130,12 +128,11 @@ export const Name = styled.div`
     font-size: 4.5vw;
   }
 
-  @media (max-width:910px) { 
+  @media (max-width: 910px) {
     text-align: center;
     font-size: 2.5em;
-    span { 
-    font-size: 0.8em;
-
+    span {
+      font-size: 0.8em;
     }
   }
 `;
@@ -145,19 +142,18 @@ export const Typewriter = styled(TypewriterStyled)``;
 export const Dev = styled.span`
   font-size: 2vw;
   text-align: left;
-    @media (max-width:910px) { 
+  @media (max-width: 910px) {
     font-size: 1.1em;
-    }
+  }
 `;
 
 export const Link = styled.a`
   text-decoration: none;
   padding: 5px;
-
 `;
 
 export const VitorIcon = styled.img`
-  border: 5px solid #333159;
+  border: 5px solid #5f744b;
   margin-top: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);

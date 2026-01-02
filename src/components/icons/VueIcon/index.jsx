@@ -1,6 +1,6 @@
 import React from "react";
 export const VueIcon = (props) => {
-  const { width, height, fill,secondFill } = props;
+  const { width, height, fill, secondFill } = props;
 
   //   #41b883
   // "#34495e"

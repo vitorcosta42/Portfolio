@@ -12,11 +12,9 @@
 Meu portfólio foi criado com o propósito de oferecer aos visitantes a oportunidade de explorar meus trabalhos e habilidades como desenvolvedor. Utilizando tecnologias modernas e atualizadas, o projeto é uma representação fiel de minha experiência e habilidades técnicas. Seja bem-vindo para conhecer mais sobre mim e meu trabalho por meio deste portfólio.</p>
 
 <a href="https://www.figma.com/file/Cwf2mgccPUxKT0qeG4Qaft/Portfolio?type=design&node-id=0%3A1&mode=design&t=esbwy8zzBuFlwj8o-1">Clique aqui para ver o design do projeto</a>
+
 <p>Ps: Apenas a tela inicial foi projetada utilizando o Figma, as demais partiram unicamente do conhecimento de UI e UX do autor, juntamente ao CSS e a ferramenta de estilização Styled Components.</p>
 <a href="https://www.vitorcosta.vercel.app/">Para visualizar o projeto em seu navegador, clique aqui.
-
-
-
 
 </a>
 
@@ -50,7 +48,7 @@ Meu portfólio foi criado com o propósito de oferecer aos visitantes a oportuni
   <tr>
     <td align="center">
       <a href="https://github.com/vitorcosta42">
-        <img src="./public/icon-vitor.jpeg" width="100px;" alt="Foto de Vitor Costa"/><br>
+        <img src="./public/icon-vitor.png" width="100px;" alt="Foto de Vitor Costa"/><br>
         <sub>
           <b>Vitor Costa</b>
         </sub>
