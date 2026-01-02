@@ -1,4 +1,4 @@
-<h1><a href="https://vitorcosta.vercel.app/" >Portfólio - Vitor Costa</a></h1>
+<h1><a href="https://vitorcosta.dev.br/" >Portfólio - Vitor Costa</a></h1>
 
 <div style="display: inline_block">
   <img src="https://img.shields.io/badge/JavaScript-5F744B"/>
@@ -14,7 +14,7 @@ Meu portfólio foi criado com o propósito de oferecer aos visitantes a oportuni
 <a href="https://www.figma.com/file/Cwf2mgccPUxKT0qeG4Qaft/Portfolio?type=design&node-id=0%3A1&mode=design&t=esbwy8zzBuFlwj8o-1">Clique aqui para ver o design do projeto</a>
 
 <p>Ps: Apenas a tela inicial foi projetada utilizando o Figma, as demais partiram unicamente do conhecimento de UI e UX do autor, juntamente ao CSS e a ferramenta de estilização Styled Components.</p>
-<a href="https://www.vitorcosta.vercel.app/">Para visualizar o projeto em seu navegador, clique aqui.
+<a href="https://vitorcosta.dev.br/">Para visualizar o projeto em seu navegador, clique aqui.
 
 </a>
 
